@@ -1,5 +1,6 @@
 export const theme = {
   light: {
+    bgImg: 'bgLight',
     background: '#FAFAFA',
     backgroundSecondary: '#FFFFFF',
     text: '#494C6B',
@@ -11,6 +12,7 @@ export const theme = {
     textHover: '#494C6B',
   },
   dark: {
+    bgImg: 'bgDark',
     background: '#171823',
     backgroundSecondary: '#25273D',
     text: '#C8CBE7',
