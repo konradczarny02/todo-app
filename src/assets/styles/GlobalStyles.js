@@ -29,7 +29,7 @@ export const GlobalStyles = createGlobalStyle`
         return bgDarkMobile;
       }
     }});
-    background-size: contain;
+    background-size: 100% 200px;
 
     @media (min-width: 700px) {
       background-image: url(${({ theme }) => {
@@ -39,6 +39,7 @@ export const GlobalStyles = createGlobalStyle`
           return bgDark;
         }
       }});
+      background-size: 100% 300px;
     }
   }
 

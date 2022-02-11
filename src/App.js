@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Header from 'components/organisms/Header/Header';
 import ThemeContextProvider from 'providers/ThemeContextProvider';
 import Form from 'components/organisms/Form/Form';
+import TodoList from 'components/organisms/TodoList/TodoList';
 
 const Container = styled.div`
   width: 90%;
@@ -23,6 +24,7 @@ function App() {
       <Container>
         <Header />
         <Form />
+        <TodoList />
       </Container>
     </ThemeContextProvider>
   );
