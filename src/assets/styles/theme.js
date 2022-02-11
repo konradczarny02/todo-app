@@ -10,6 +10,7 @@ export const theme = {
     input: '#9495A5',
     inputTyping: '#393A4B',
     textHover: '#494C6B',
+    borderColor: '#E3E4F1',
   },
   dark: {
     bgImg: 'bgDark',
@@ -22,5 +23,6 @@ export const theme = {
     input: '#767992',
     inputTyping: '#C8CBE7',
     textHover: '#E3E4F1',
+    borderColor: '#393A4B',
   },
 };
