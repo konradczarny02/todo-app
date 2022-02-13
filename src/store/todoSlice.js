@@ -1,4 +1,5 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit';
+import { getStateFromLocalStorage } from 'store/helpers';
 
 const createTodo = (title) => ({
   id: nanoid(),
@@ -6,7 +7,7 @@ const createTodo = (title) => ({
   completed: false,
 });
 
-const initialState = [createTodo('Learn Redux'), createTodo('Learn TypeScript')];
+const initialState = getStateFromLocalStorage('todos');
 
 export const todosSlice = createSlice({
   name: 'todos',
