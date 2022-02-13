@@ -16,9 +16,15 @@ export const todosSlice = createSlice({
       const todo = createTodo(action.payload);
       state.push(todo);
     },
+    delete: (state, action) => {
+      return state.filter((todo) => todo.id !== action.payload);
+    },
     complete: (state, action) => {
-      const todo = state.find((todo) => todo.id === action.payload.id);
-      todo.completed = action.payload.completed;
+      const todo = state.find((todo) => todo.id === action.payload);
+      todo.completed = !todo.completed;
+    },
+    clearCompleted: (state, action) => {
+      return state.filter((todo) => todo.completed === false);
     },
   },
 });
