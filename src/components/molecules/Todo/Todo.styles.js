@@ -7,6 +7,7 @@ export const TodoWrapper = styled.li`
   align-items: center;
   list-style: none;
   padding: 0 25px;
+  border-bottom: 1px solid ${({ theme }) => theme.borderColor};
 
   p {
     font-size: 12px;

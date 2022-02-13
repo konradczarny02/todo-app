@@ -20,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     height: 100vh;
     width: 100%;
+    transition: background-color .2s ease-in-out, background-image .2s ease-in-out;
     background-repeat: no-repeat;
     background-color: ${({ theme }) => theme.background};
     background-image: url(${({ theme }) => {

@@ -5,4 +5,5 @@ export const TodoListWrapper = styled.ul`
   width: 100%;
   background-color: ${({ theme }) => theme.backgroundSecondary};
   border-radius: 4px;
+  margin-bottom: 0;
 `;

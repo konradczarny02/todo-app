@@ -23,5 +23,8 @@ export const todosSlice = createSlice({
       const todo = state.find((todo) => todo.id === action.payload);
       todo.completed = !todo.completed;
     },
+    clearCompleted: (state, action) => {
+      return state.filter((todo) => todo.completed === false);
+    },
   },
 });
