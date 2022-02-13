@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { todosSlice } from 'app/todoSlice';
+import { todosSlice } from 'store/todoSlice';
 import { TodoWrapper } from 'components/molecules/Todo/Todo.styles';
 import { CompleteButton } from 'components/atoms/CompleteButton/CompleteButton';
 import { ReactComponent as CompleteIcon } from 'assets/images/completeIcon.svg';

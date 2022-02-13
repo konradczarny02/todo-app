@@ -1,10 +1,11 @@
 import React from 'react';
 import { GlobalStyles } from 'assets/styles/GlobalStyles';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import { theme } from 'assets/styles/theme';
 import Header from 'components/organisms/Header/Header';
-import ThemeContextProvider from 'providers/ThemeContextProvider';
 import Form from 'components/organisms/Form/Form';
 import TodoList from 'components/organisms/TodoList/TodoList';
+import { useSelector } from 'react-redux';
 
 const Container = styled.div`
   width: 90%;
@@ -18,15 +19,16 @@ const Container = styled.div`
 `;
 
 function App() {
+  const themeMode = useSelector((state) => state.themeMode);
   return (
-    <ThemeContextProvider>
+    <ThemeProvider theme={themeMode === 'light' ? theme.light : theme.dark}>
       <GlobalStyles />
       <Container>
         <Header />
         <Form />
         <TodoList />
       </Container>
-    </ThemeContextProvider>
+    </ThemeProvider>
   );
 }
 
