@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { todosSlice } from 'app/todoSlice';
+import { todosSlice } from 'store/todoSlice';
 import { FormWrapper } from 'components/organisms/Form/Form.styles';
 import { Button } from 'components/atoms/Button/Button';
 

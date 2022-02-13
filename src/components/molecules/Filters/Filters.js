@@ -1,7 +1,7 @@
 import React from 'react';
 import { FilterWrapper } from 'components/molecules/Filters/Filters.styles';
 import { useDispatch } from 'react-redux';
-import { todosSlice } from 'app/todoSlice';
+import { todosSlice } from 'store/todoSlice';
 
 const Filters = ({ handleChangeFilter, items }) => {
   const dispatch = useDispatch();
